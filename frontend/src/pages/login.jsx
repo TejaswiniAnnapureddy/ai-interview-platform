@@ -11,7 +11,10 @@ export default function Login() {
 
     try {
       const res = await api.post("/auth/login", form);
+
       localStorage.setItem("token", res.data.access_token);
+      localStorage.setItem("userEmail", res.data.user.email);
+
       navigate("/dashboard");
     } catch (err) {
       alert(err.response?.data?.detail || "Login failed");
@@ -25,12 +28,27 @@ export default function Login() {
         <p>Practice interviews based on your resume.</p>
 
         <form onSubmit={handleSubmit}>
-          <input className="input" placeholder="Email" onChange={(e) => setForm({ ...form, email: e.target.value })} />
-          <input className="input" type="password" placeholder="Password" onChange={(e) => setForm({ ...form, password: e.target.value })} />
-          <button className="button" type="submit">Login</button>
+          <input
+            className="input"
+            placeholder="Email"
+            onChange={(e) => setForm({ ...form, email: e.target.value })}
+          />
+
+          <input
+            className="input"
+            type="password"
+            placeholder="Password"
+            onChange={(e) => setForm({ ...form, password: e.target.value })}
+          />
+
+          <button className="button" type="submit">
+            Login
+          </button>
         </form>
 
-        <p>New user? <Link to="/register">Create account</Link></p>
+        <p>
+          New user? <Link to="/register">Create account</Link>
+        </p>
       </div>
     </div>
   );

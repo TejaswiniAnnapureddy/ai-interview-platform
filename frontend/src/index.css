@@ -98,3 +98,31 @@ a {
   max-height: 350px;
   overflow-y: auto;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #020617;
+  padding: 16px 40px;
+  color: white;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar a {
+  margin-right: 20px;
+  color: #e2e8f0;
+  font-weight: bold;
+}
+
+.navbar button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 9px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
