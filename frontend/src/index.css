@@ -126,3 +126,31 @@ a {
   border-radius: 8px;
   cursor: pointer;
 }
+
+.result-box {
+  background: white;
+  color: #111827;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+.result-box h3 {
+  margin-top: 0;
+}
+
+.result-box h4 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.result-box ul {
+  padding-left: 20px;
+}
+
+.result-box pre {
+  white-space: pre-wrap;
+  font-family: inherit;
+  line-height: 1.7;
+}

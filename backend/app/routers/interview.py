@@ -7,6 +7,7 @@ from sqlalchemy.orm import Session
 from fastapi import Depends
 from app.database import get_db
 from app.models import InterviewHistory
+import json
 
 load_dotenv()
 
@@ -72,9 +73,7 @@ def generate_feedback(data: FeedbackRequest):
                 {
                     "role": "user",
                     "content": f"""
-You are an AI technical interviewer.
-
-Evaluate the candidate answer strictly.
+Evaluate this interview answer.
 
 Question:
 {data.question}
@@ -82,12 +81,12 @@ Question:
 Candidate Answer:
 {data.answer}
 
-Return feedback in this exact format:
+Return exactly in this format:
 
 Score: X/10
 
 Verdict:
-Briefly say whether the answer is weak, average, good, or excellent.
+Good/Average/Weak/Excellent
 
 What the candidate did well:
 - point 1
@@ -96,13 +95,9 @@ What the candidate did well:
 Where the candidate should improve:
 - point 1
 - point 2
-- point 3
 
-Correct answer:
-Give the ideal interview answer in simple language.
-
-How to improve this answer:
-Give a rewritten better version of the candidate's answer.
+Correct Answer:
+Provide the ideal interview answer.
 """
                 }
             ],
