@@ -1,63 +1,10 @@
-ansicon==1.89.0
-awsebcli==3.27.1
-bcrypt==5.0.0
-blessed==1.27.0
-blinker==1.9.0
-boltons @ file:///C:/ci_311/boltons_1677729932371/work
-botocore==1.42.97
-brotlipy==0.7.0
-cement==2.10.14
-certifi @ file:///C:/b/abs_4a0polqwty/croot/certifi_1683875377622/work/certifi
-cffi==2.0.0
-charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
-click==8.3.3
-clr_loader==0.2.10
-colorama @ file:///C:/ci_311/colorama_1676422310965/work
-conda @ file:///C:/b/abs_b5q92oum8h/croot/conda_1689272261421/work
-conda-content-trust @ file:///C:/ci_311/conda-content-trust_1676467587370/work
-conda-libmamba-solver @ file:///C:/b/abs_5a9xvt2a3k/croot/conda-libmamba-solver_1685032355900/work/src
-conda-package-handling @ file:///C:/b/abs_ce4_vcfd0y/croot/conda-package-handling_1685024800103/work
-conda_package_streaming @ file:///C:/b/abs_88a7k_wmm1/croot/conda-package-streaming_1685019697115/work
-cryptography @ file:///C:/b/abs_b28tzldafl/croot/cryptography_1686613103834/work
-decorator==5.2.1
-Deprecated==1.3.1
-fabric==3.2.2
-Flask==3.1.3
-idna @ file:///C:/ci_311/idna_1676424932545/work
-invoke==3.0.3
-itsdangerous==2.2.0
-Jinja2==3.1.6
-jinxed==1.4.0
-jmespath==1.1.0
-jsonpatch @ file:///tmp/build/80754af9/jsonpatch_1615747632069/work
-jsonpointer==2.1
-libmambapy @ file:///C:/b/abs_f0tnqlkcbn/croot/mamba-split_1685993165748/work/libmambapy
-MarkupSafe==3.0.3
-menuinst @ file:///C:/ci_311/menuinst_1678730372782/work
-packaging==26.2
-paramiko==4.0.0
-pathspec==0.12.1
-pluggy @ file:///C:/ci_311/pluggy_1676422178143/work
-pycosat @ file:///C:/ci_311/pycosat_1676438455539/work
-pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
-PyNaCl==1.6.2
-pyOpenSSL @ file:///C:/b/abs_de215ipd18/croot/pyopenssl_1678965319166/work
-pypiwin32==223
-PySocks @ file:///C:/ci_311/pysocks_1676425991111/work
-python-dateutil==2.9.0.post0
-pythonnet==3.0.5
-pywin32==311
-PyYAML==6.0.3
-requests==2.33.1
-ruamel.yaml @ file:///C:/ci_311/ruamel.yaml_1676439214109/work
-semantic-version==2.10.0
-six @ file:///tmp/build/80754af9/six_1644875935023/work
-termcolor==2.5.0
-toolz @ file:///C:/ci_311/toolz_1676431406517/work
-tqdm @ file:///C:/b/abs_f76j9hg7pv/croot/tqdm_1679561871187/work
-urllib3 @ file:///C:/b/abs_889_loyqv4/croot/urllib3_1686163174463/work
-wcwidth==0.2.14
-Werkzeug==3.1.8
-win-inet-pton @ file:///C:/ci_311/win_inet_pton_1676425458225/work
-wrapt==2.1.2
-zstandard==0.19.0
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+python-jose
+passlib[bcrypt]
+python-multipart
+python-dotenv
+pdfplumber
+groq
