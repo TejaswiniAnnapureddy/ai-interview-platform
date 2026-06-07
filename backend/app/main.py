@@ -13,7 +13,9 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://ai-interview-platform-amber-nine.vercel.app"
+        "http://localhost:5174",
+        "https://ai-interview-platform-amber-nine.vercel.app",
+        "https://ai-interview-platform-3xbz.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
